@@ -1,0 +1,15 @@
+#Just Notes
+
+#Main spheres of cloud are business management, infrastructure, security and application infrastructure
+
+#Cloud roles include program manager, financial manager, infratrstructure architect, operations engineer, operations engineer management, operations engineer support, 
+  security architect, application architect, application developer, DevOps Engineer.
+  
+#Infrastucture as code.
+#Manually - Management console, AWS CLI, AWS API's
+#AWS Cloud formation
+#IaC Dev,test,prod deploy, prod update environments. Provides a reusable maintainable extensible and testable infrastructure
+
+#IaC practice such as versioning control and continuous integrationa and delivery. Codify designs. integrate rapidly on designs, easy to maintain, ez security practices
+
+#DevOps model example
