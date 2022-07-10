@@ -1,0 +1,120 @@
+Module 2: Compute in the Cloud
+
+  Objectives:
+    Exploring EC2
+    Elastic load balancing benefits
+    Amazon simple notification service
+    Amazon simple queue service
+    summarize additional compute options
+
+  Elastic Compute Cloud EC2
+    - Provides secure, resizable compute capacity in the cloud as EC2 instances
+    - Use an EC2 instance on a virtual server to run applications in aws cloud
+    - Instances can vertically scale smaller or larger instance
+  Launch
+    - Choose Operating system (windows,linux), application server and applications (Internal biz apps, web apps, databases,
+    aws apps,3rd party software)
+    - Select instance type (specific hardware configuration for instance)
+    - Specify security settings
+    
+  Connect
+    - Multiple ways to connect your programs and applicatons
+   
+  Use
+    Run commands, software, CRUD
+   
+ HyperVisor
+  -Responsible for sharing hardware resource. Multienancy - Sharing underlying hardware between virutal machines
+  -Isolating vms from eachother, secure even though using same hardware
+ 
+ Types of Instances
+  -General purpose, compute optimized, memory optimized, storage optimized and accelerated computing
+  
+  General purpose
+    Balance of compute, memory and networking resources
+    Application servers
+    
+  Compute optimized
+    High performance processors
+    Compute intensive tasks
+    Gaming servers, high performance computing, scientific modeling
+  Memory optimized
+    High performance databases
+    Fast performance for workloads that process large datasets in memory
+    High performance database or applicatin that requires real time processing of large amounts of unstructured data
+  Storage optimized
+    Workloads that require high, sequential read and write access to large datasets on local storage
+    Distributed file systems, data warehousing applications and high online transaction processing systems(OLTP)
+    Input/Output operations per seconds measures storage device (IOPS)
+    
+  Accelerated computing
+    Use hardware accelerators or coprocessors to perform functions more efficiently
+    Floating point number calculations, graphics processing and data pattern matching. Game streaming
+    Acclerator is a component that can expedite data processing
+   
+Pricing
+  On Demand - Depends on instance type and operating system. Durationg that an instance runs (s,min,hr). Workloads that have unpredictable usage patterns
+  Savings plan - Commitment on a consistent amount of usage measured in $/hr for 1-3 year plan
+  Reserved Instances - Suitable for steady state workloards or predictable usage. 1-3 year term, upfront. partial upfront. no upfront
+  Spot instances - On demand instances that can be reclaimed by amazon with a 2 minute warning. Can save 10% versus on demand. Good for tolerable workloads 
+                   that can be interrupted like batch workloads.
+  Dedicated hosts - physical hosts dedicated for your use of EC2. Usually for meeting certain compliance regulations that no one else will share tenancy of that host
+  
+Scaling EC2 Auto Scaling Service 
+  Scalability and elasticity
+  For a business what is the right amount of hardware needed can be complex to get right
+  Buy more hardware and its unused. Skip on hardware and miss customers demand
+  AWS can always have the correct amount of hardware all the time for your business
+  Redundant backup programmed so in case of a point of failure customers dont lose access to business
+
+Scale in and scale out
+  More cashiers versus bigger cashier versus order makers
+  Customization:
+    Minimum-instance || Desired-instances || Scale-as-needed || Maximum instances
+    
+Directing traffic with Elastic Load Balancing
+  Elastic load balancing is service that automatically distributes incoming application traffic across multiple resources
+  Acts as single point of contact for incoming traffic. Employee tellings shoppers what cashier to go to so they balance traffic
+  ELB is regional
+  Decoupled architechture
+  
+AWS Auto Scaling and Elastic Load Balancing are different services but can work together to deliver higher performace and availability
+
+Messaging and Queuing
+  Order screen for barista in coffee shop example
+  Orfer buffer. Tightly coupled system if one point fails entire system may go down
+  Losely coupled architechture is better to prevent cascading failures in the system
+ 
+ Amazon Simple Notification Service
+  -Send sqs plus notifications to users. Topic a channel for messages to be delivered
+  -1 message in topic to be sent to all subs
+  - can be used in ads like email
+  - a pickup notification for a ready order
+  
+ Amazon Simple Queue Service
+ -Between software components they can: send messages, store messages, receive messages. At any volume
+ -Payload data contained within a message
+ 
+ Monolithic application has many tightly coupled components like db, servers, ui, business logic
+ Microservice approach is a losely coupled architechture
+ 
+Serverless:
+ For host short running functions, service oriented applications, event driven applications, no need for managing servers
+  Unaccessible underlying infrastructure. It's taken care of
+  ex: AWS Lambda - code uploaded and configured into a labda function with a set trigger to run in a managed environment
+  run time under 15 minutes not long time
+ 
+ 
+Container
+  Running docker container based workloads
+      Amazon Elastic Container Service
+      Amazon Elastic Kubernetes Service
+    Both container orchestration tools. Docker container. Container a package for your code. Containers running on ec2 instances. Choose one then choose platform 
+    either ec2 that you manage or serverless managed fargate platform
+ 
+AWS Fargate - serverless compute platform for ecs or eks
+ 
+Non serverless like ec2 you must
+  Provision instances
+  Upload your code
+  Continue to manage the instances while your application is running
