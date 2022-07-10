@@ -1,0 +1,41 @@
+#Overview. Cloud concepts, AWS services, security, architecture, pricing and support
+
+#Module 1 Introduction
+  Objectives
+    Benefits of AWS, on demand delivery and cloud deployments, pricing models
+  Services 
+    Compute, storage, network security, blockchain, ML, AI, Robot development, video production....
+   Cloud Compute
+    Client - Server Model
+    Customer requests - Amazon Elastic Compute Cloud instance (server) EC2
+    Validation and response by server. Multiple requests and increased complexity in real world
+   Pay per usage:
+    Capacity solutions per demand
+   Cloud
+    On demand delivery of IT resources over the internet with pay as you go pricing
+    
+    Cloud based deployment
+      Migrate existing applications to the cloud or design and build new applications in the cloud
+      Applications can be low level requiring IT staff to manage or high level automated
+      ex: virtual servers, databases and networking components fully based in the cloud
+    
+    On-Premise Deployment
+      Deploy resources by using virtualization and resource management tools
+      Private cloud deployment
+      Tech running on private data center with incorporation of application management and other virtualization technologies to help increase resource utilization
+      
+    Hybrid Deployment
+      Connect cloud based resources to on premise infrastructure
+      Integrate cloud based resources with legacy it applications
+      ex: legacy applications that are better maintained on premise. Requirement to keep records on premise
+      ex: A company that wants to use cloud services like automating batch data for processing and analytics. That data perhaps is part of its legacy applications 
+          that will remain on premise but still benefit from cloud services
+          
+Benefits of cloud computing
+  Trade upfront expense for variable expense
+    Buying infrastructure like a data center and its physical components is expensive, vs paying per usage on the cloud
+  Maintenance and running costs of a data center
+  Capacity on demand versus estimation 
+  AWS economies of scale pricing
+  Increased speed and agility of resources and services
+  Glovbal in minutes
