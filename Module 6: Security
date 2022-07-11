@@ -66,4 +66,17 @@ Denial of Service Attacks
       AWS Shiled Advanced
         Paid service that provides detailed diagnotics and ability to detect and mitigate sophisticated DdOs attacks
         Integrates with other services as well
-        
+ 
+ Additional Security Services
+    Encryption, key
+           At rest and at transit
+           
+    AWS Key management service - enables to perform encryption operations through use of cryptographic keys
+    
+    AWS WAF - web application firewall that allows you to monitor network requests. Uses web access control list
+              to protect your aws resources
+              
+    AWS Inspector- helps to improve the security and compliance of applications by running automated security assessments  
+    
+    Amazon GuardDuty is a service that provides intelligent threat detection for your AWS infrastructure and resources.
+    It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
