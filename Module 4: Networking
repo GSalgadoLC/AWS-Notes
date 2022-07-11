@@ -1,0 +1,65 @@
+Module 4: Networking
+
+Objectives: Concepts of networking, public vs private networks, virtual private gateways, virtual private networks,
+            AWS Direct Connect, benefits of hybrid deployment, layers of security in IT, interaction of customers with 
+            aws services
+            
+Amazon Virtual Private Cloud
+  Public and private subnets
+  Coffee shop example the public is the cashier and the barista is the private.
+
+Connectivity to AWS
+
+Public traffic --> -Internet gateway Estic load balancer --> 
+                     Private or        [ Auto Scaling [ Security (EC2 Instances) ]]
+                                                                      [ Security ( Database) ]
+                                                                                             ]
+Internet gateway. Virtual private gateway via a virtual private network. Use public road but with a bodyguard
+Subnet - A section of a VPC that can contain resources such as amazon ec2 instances
+AWS Direct connect can act like a private magic backdoor that will only allow people you want to give access
+Private connection from a datacenter
+
+Subnets and network access control lists
+
+Security
+  Network hardening 
+  Application security
+  User identity
+  Authorization and Authetication
+  DDOS prevention
+  Data integrity
+  Encryption
+
+Model
+      Packet --> Network access  [   [subnet]   ]
+                 Control list
+  
+  NACL checks credentials if they have access. Permission to go in and out.
+    ex: checks vip list at the subnet level
+        Default allows all innbound and outbound traffic
+  Security group can allow specific types of requests like allow web traffic, checks in and not out
+    ex: allows specfic traffic types inside an ec2 instance
+        Default is to deny all inbound and allow all outbound and is stateful
+        
+  Stateful vs stateless engines of security groups and Network access control lists
+  
+  Private subnet- isolates databases containing customers personal info
+  Virtual private gateway - Create a VPC connection between the VPC and the internal corporate network
+  Public Subnet - Support customer facing traffic
+  AWS Direct Connect - Establish a dedicated connection between the on-premise data center and the VPC
+  
+Global Networking:
+    Route 53 Domain Name Service:
+      Translation of website names to IP Addresses and routes to it
+      
+      -Latency based routing
+      -Geolocation DNS
+      -Geoproximity routing
+      -Weighted round robin
+      
+    CloudFront - Content delivery network
+
+Summary:
+  -Structuring and connecting to a VPC
+  -Securing VPC resources with NACLs and Security groups
+  -Using route 53 and CloudFront
