@@ -1,0 +1,69 @@
+Module 6: Security
+    Objectives:
+        Shared responsibility model, multi-factor authethication, aws identity, aws access management, main benefits of aws 
+        organizations, security policies, benefits of compliance with aws, and other best practices
+        
+Shared responsibilty model
+
+    Customer : Customer data like : Platform, applications, identity and access management
+                                    Operating system, network and firewall configuration
+                                    Client side data encryption, server side de, network traffic protection
+                                    
+    AWS: Foundation services like:  Compute, Storage, Database, netowrking
+                                    AWS global infrastructure, regions, edge locations and availability zones
+                                    Hypervisor, netowrk, physical
+                                    
+User permissions and access:
+
+    Account root user administrator / owner - access and control any resources
+        -Multifactor Authethication for an additional layer
+    Permissioned access using AWS Identity and Access Management
+        -IAM user, has default of no permissions
+        -Explicit permission of any action
+        -Least priviledge principle
+        -IAM policies JSON doc of allowable api calls of user
+    Best practice to use IAM groups or classes
+    IAM roles - have associated permissions that give permissions for a temporary amount of time.
+    
+    
+AWS Organizations
+    -Separtions of accounts
+    -Centralized management
+    -Consolidated billing - bulk discounts
+    -Hierarchical groupings of accounts 
+        ex:regulatory requirement accounts
+    -AWS service and API actions access control
+    
+    
+Compliance    
+    Standards and requirements
+      Ex: USA Healthcare HIPPA requirements or EU data requirements
+    Inherit aws pre built compliant infrastructure  
+    
+AWS Artifact provides on demand secuirty and compliance reports and select online agreements. Consists of two main sections
+AWS Artifact Agreements and AWS Artifact Reports
+
+Artifact: compliance reports on demand, review, accept and manage agreements
+Customer Compliance Center
+
+    
+Denial of Service Attacks   
+    DDOS - Distributed denial of service. Attack on infrastructure
+    Sends overwhelming requests to infrastructure of application. Leveraging several computers or bots
+    
+    Attack UDP FLOOD: Redirection of server response 
+    Attack HTTP: Complex and attention needy searches
+    Attack SLOWLORIS: Taking forever at checkout due to a faked slow connection. Production server in standby
+    
+    Solutions 
+        security groups allowing only specific traffic
+        Elastic load balancing handing http traffic 
+        
+      AWS Shield - standard malicious attacks
+        Free no cost
+        Attackers signatures
+        
+      AWS Shiled Advanced
+        Paid service that provides detailed diagnotics and ability to detect and mitigate sophisticated DdOs attacks
+        Integrates with other services as well
+        
