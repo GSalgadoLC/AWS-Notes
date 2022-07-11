@@ -1,0 +1,52 @@
+Module 3: Global Infrastructure and Reliability
+
+Objectives: Learn about the infrastructure, availability zones, cloudfront, edge locations, comparing differenet methods for provisioning aws services
+
+High availability and fault tolerance
+
+Global Infrastructure:
+    AWS Regions are isolated entirely from other regions. Customer can choose which region to connect to
+    ex:regulations requiring data to remain in a certain location. Regional data soverignty
+    
+    Distance between usage and datacenter can affect thse latency of service
+    Feature availability may also be a factor, not all regions will support all services
+    Pricing may differ per region
+    
+Each region has many availability zones that are composed of many datacenters
+
+Edge Locations
+  Customers in Mumbai but data in tokyo. You can cache via a content delivery network cdn
+  AWS cdn is CloudFront, low latency and high transfer speeds
+  Uses edge locations are separate from regions. They run cloudfron and also domain name service such as amazon route 53
+  AWS outposts will install a mini region inside a private datacenter building
+  
+API is how to interact with aws services
+  Application programming interface
+  
+Methods to interact are
+  AWS management console
+    Browser based. Test environments. Bills. Monitoring. 
+  AWS Command Line Interface
+    Production ready. Scripts.. Automaton
+  AWS Software development kits
+    Programs without using low level apis
+  Other tools
+  
+ Provisioning a resource
+  Log in to management console
+  Write commands
+  
+  
+Elastic Beanstalk
+    Provide application code and desired confiugrations and beanstalk will create enviroment 
+    Manages adjustable capacity, load balancing, automatic scaling and health monitoring
+    
+ CloudFormation
+    Treat your infrastructure as code. No need to perform manual actions
+    Determines the right operations to perform when managing your stack and rolls back changes automatically if an error is detected
+    
+ 
+ 
+    
+    
+    
