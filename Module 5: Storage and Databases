@@ -1,0 +1,57 @@
+Module 5: Storage and Databases
+  Objectives:
+      concepts of storage and databases, Amazon Elastic Block Store, Amazon Simple Storage Service,
+      Amazon Elastic File System, Amazon Relational Database Service, Amazon Dynamo DB, summary
+  
+--  
+Instance stores and Amazon Elastic Block Store:
+    Block level storage - a place to store files. Cubby system
+      Ex: Databases, Enterprise software, File systems
+      
+In a normal EC2 instance you have the hypervisor aws host and store volumes harddrive
+  that is physically attached to host computer but this data is deleted when you stop running 
+  your instance
+
+EBS allows for backups of data called snapshots, only changed data is added
+EBS you define confiugrations settings like volume, size and type. You can provision it. 
+You can attach it to an EC2 instance
+
+--
+Amazon Simple Storage Service:
+  Allows you to store and retrieve unlimited data
+  Store data as objects. Each object contains data, metadata and a key
+  Store objects in buckets
+  Max object size is 5 TB
+  Versionobjects of papertrail
+  Create multiple permission objects
+  Anytime there is a change to the object, you must re upload the entire file
+  
+  Tiered stored objects 
+    First Tier - S3 Standard - Super reliable durability. Can sustain concurrent loss of data
+                 S3 Standard Static Website
+    Second tier - S3 Standard Infrequent Acces (Standard-IA) - Less frequent but rapidly retreivable
+    Third tier - Amazon S3 Glacier longterm slowly retrievable data. Vaults and archives
+                 Vault lock term. Can configure specific policys like Write once and Read many (WORM)
+   life cycle policy to automatically transfer data to glacier after x days 
+   
+   
+   Block Stoage Service     versus        Amazon Simple Storage Service (S3)
+                        
+   Size up to: 16 TiB                           Unlimited storage, each object 5tb
+   Survive termination of EC2                   Write once, read many
+   Solid State by default                       99.9999 durable
+   HDD options                                  Web enabled
+   Block micro change friendly                  Regionally distributed
+                                                Offers cost savings
+                                                Serverless
+   
+   
+   Amazon Elastic File System (EFS):
+      Regional service
+      Stores data in and across multiple availability zones
+      Used with AWS cloud services and on premises resources
+      Allows for multiple instances accessing the data in EFS at the same time
+      Autoscales as needed
+  
+  
+  Amazon Relational Database (RDS)
