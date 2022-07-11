@@ -55,3 +55,60 @@ Amazon Simple Storage Service:
   
   
   Amazon Relational Database (RDS)
+    Relational database - Data is stored in a way that relates it to other pieces of data
+    They use structured query language (SQL) to store and query data
+    Amazon RDS allows to run RDBs in the aws cloud
+    It is a managed service that automates tasks such as hardware provisioning, database setup, patching and backups
+    Offers encryption at rest aka at storage and at transit
+    
+      RDS Engines - Amazon Aurora
+                    PostgreSQL
+                    MySql
+                    MariaDB
+                    Oracle Database
+                    Microsoft SQL Server
+     Automatic high availability, customer ownership of data, customer ownership of schema, customer control of network   
+     Business analytics
+     
+     Amazon Aurora - An enterprise class relational databse. Up to 5x faster that standard MySQL database.
+                     Helps reduce cost by reducing input/output operations. 
+                     Good for workloads requiring high availability . Replicates 6 copis of data across 3 availability zones and 
+                     continuously backups data to Amazon S3
+   
+   Amazon Dynamo DB
+      Serverless database. Create tables to store and clear data. Organize data into items that have attributes aka different features
+      Dynamo DB manages the underlying storage aka the scaling. Redundantly stores data. Milisecond response times. Useful for millions
+      of users with fast response times
+      
+      MySQL Can have performance and scaling issues when under stress. Has rigid types of data structures stored in tables
+      Dynamo uses NoSQL a non relational databse. No schema less rigid. Can be added or removed attribbutes
+      Less complex query more simpler. Very quick and scalable. Purpose built
+      
+      Key value query, massive throughput capabilities, PetaByte size potentional, granular api access
+      Everything else, general purpose
+      
+      
+ Amazon Redshift
+      An data warehousing service that you can use for big data analytics. Offers the availability to collect data
+      from many sources and helps you understand relationships and trends across your data
+    
+    
+Amazon Database Migration Service:
+    Enables you to migrate relationsal databases, nonrelational databases, and other data stores
+    Moves dbs between source and target with minimal downtime. Do not need to be of the same type using schema conversion tool
+    
+    Also useful for
+        Development and test database migrations
+        Database consolidations
+        Continuous replication
+    
+Additional Database Services    
+    Document DB - content management, user profiles
+    Neptune - graph database engineered for recommendation, fraud, social network, supply chain links
+    Quantum Ledger Database - immutable ledger. No entry can ever be removed or changed
+    Managed Blockchain - lets multiple parties run transactions and share data without a central authority
+    ElastiCache - Adding caching layers can improve read times 
+    DynamoDB Accelerator - For Non relational databases
+    
+    
+    
