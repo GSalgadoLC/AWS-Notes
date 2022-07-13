@@ -1,0 +1,71 @@
+Module 9: Migration and Innovation
+
+  Objectives:
+    Understand migration and innovation in the aws cloud
+    AWS Cloud Adoption Framework (AWS CAF)
+    Six key factors of a cloud migration strategy
+    Data migration solutions... AWS Snowcone, AWS Snowball and AWS Snowmobile
+    
+    
+  Cloud Adoption Framework (AWS CAF)
+    Organizes guidance into six aread of focus called Perspectives
+        Business, People, Governance, Platform, Security, and Operations
+        
+    Business - ensures IT aligns with business needs and that IT invesments are linked to business results
+      Roles: Business managers, Finance managers, Budget owners, and Strategy stakeholders
+      
+    People - Supports development of an organization wide change mamangement strategy for successful cloud adoption
+      Roles: HR, staffing and people managers
+      
+    Governance - focuses on the skills and processes to align IT strategy with business strategy
+      Roles: Chief Information Officer (CIO), Program managers, Enterprise architects, Business analysts, Portfolio managers
+      
+    Platform -  includes principles and patterns for implementing new solutions on the cloud, and migrating on-premises workloads to the cloud
+      Roles: Chief Technology Officer (CTO), IT managers, Solutions architects
+      
+    Security - ensures that the organization meets security objectives for visibility, auditability, control, and agility
+      Roles: Chief Information Security Officer (CISO), IT security managers, IT security analysts
+      
+    Operations -  helps you to enable, run, use, operate, and recover IT workloads to the level agreed upon with your business stakeholders
+      Roles: IT operations managers, IT support managers
+        
+        
+  Migration Strategies:
+  
+    6 strategies for migration  
+    
+      Rehosting - “lift-and-shift” involves moving applications without changes
+      
+      Replatforming - “lift, tinker, and shift,” involves making a few cloud optimizations to realize a tangible benefit. 
+                       Optimization is achieved without changing the core architecture of the application.
+                       
+      Refactoring/re-architecting - reimagining how an application is architected and developed by using cloud-native features. 
+                                    Refactoring is driven by a strong business need to add features, scale, or performance that 
+                                    would otherwise be difficult to achieve in the application’s existing environment. New code
+                                    
+      Repurchasing - involves moving from a traditional license to a software-as-a-service model
+                     Ending traditional legacy licensing to cloud native offerings,
+                     
+      Retaining - keeping applications that are critical for the business in the source environment. This might include applications
+                  that require major refactoring before they can be migrated, or, work that can be postponed until a later time. Going 
+                  to be depricated soonish
+                  
+      Retiring - process of removing applications that are no longer needed
+      
+      
+AWS Snow Family:
+
+  Cryptographically encrypted
+  Migrationg to cloud via uploading may take too long
+  
+  AWS Snowcone a device that holds up to 8 Petabytes of data. Plug in, copy data and send in to aws so they can transfer data to a cloud service 
+           like an S3 bucket. Ready to use
+           
+  AWS Snowball Edge: Storage, Compute: Shipped to remote locations. Image compression, industriaL. 80 TB
+  
+  AWS Snowmobile: 45ft pulled by truck. 100 petabytes. Network attached storage device, GPS tracker, video surveillance, fire safe
+ 
+Innovation with AWS:
+  Serverless applications
+  Artificial Intelligence - Amazon LEX
+  Machine Learning -AWS Sagemaker
