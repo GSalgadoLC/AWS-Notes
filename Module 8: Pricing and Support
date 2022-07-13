@@ -1,0 +1,85 @@
+Module 8: Pricing and Support
+  Objectives: Price models, Free Tier, benefits of organizations and consolidated billing, aws budgets, aws cost explorer,
+              aws pricing calculator, aws support plans and aws marketplace.
+              
+  Free Tier:
+      Always free, 12 months free, trial
+  
+  Price models:
+    Pay for what you use
+    Pay less when you reserve and pay advanced
+    Pay less with volume based discounts 
+  
+  Pricing calculator:
+    Estimate base on services and use cases.
+    Quick and advanced function
+    Usage less that Free tier is not charged
+    
+  Billing Dashboard:
+    Month to date spend
+    Forecast amount
+    Top free tier services by usage
+    Cost explore and budget services
+    
+  Consolidated billing:
+    Single bill for multiple aws accounts max 4 but is changeable
+    Share bulk discounts, savings plans and reserved instances across organizations
+    Easily track combined costs
+    
+  Budgets:
+    Create budget to plan service usage, costs and instance reservations
+    Customer alerts to know when you get past a certain threshold
+    
+  AWS Cost Exlplorer:
+    tool that enables you to visualize, understand and manage your AWS costs and usage over time
+    12 months of historical data
+    Cost optimzation tool
+    
+  Support Plans:
+    Support options: basic, developer,business and enterprise
+    
+    Basic:
+      24/7 customer service
+      Documentation
+      whitepapers
+      support forums
+      aws trusted advisor
+      aws personal health dashboard
+      
+    Developer:
+      Basic +
+      Email access to customer support
+      Client side diagnostic tools
+      Building block architecture support which consist of guidance for how to use AWS offerings, features and services together
+    
+    Business:
+      Basic+ and Devloper+
+      Trusted advisor with full set of best practices
+      Direct phone access to cloud support engineers 4hour and 1 hour respone
+      Infrastructure event management
+    
+    Enterprise:
+    
+      Basic+, Devloper+ and Business support+
+      15 minute SLA for business critical workloads
+      
+      Technical account manager (TAM)
+        Concierge support team, architect review, opertations reviews
+        Five pillars of well architect reviews:
+         Operational excellence, security, reliability, performance efficiency, cost optimization
+         
+    AWS Marketplace     
+        A digital catalog that includes thousands of software listings from independent software vendors
+        Find, test and buy software that runs on aws
+        Per listing access detailed information on pricing options, available support and reviews 
+        
+        Categories:
+          Business applications, data and analytics, DevOps, Infrastrcture software,
+          Internet of things, Machine learning, migration and security
+          
+          And subcategories...
+      
+      
+      
+      
+      
