@@ -1,0 +1,20 @@
+Module 7: Monitoring and Analytics
+  Objectives:
+      Monitoring AWS environment, CloudWatchm, CloudTrail, and AWS Trusted Advisor
+      
+CloudWatch:
+    Service that enables you to monitor and manage various metrics and configure alarm actions based on metrics
+    Gain insights and visibility of your applications, infrastructure and resources 
+    Drive insights to optimize applications and operational resources
+    Cloudwatch Alarms that automatically perform actions if value of metric is at target range
+    Cloudwatch Dashboard: See all resoure metrics in a friendly data presenting dashboard
+    
+CloudTrail:
+    Records api calls for your account. Including identity of api caller, the time of api call, source ip address of api
+      caller and more. "Breadcrumbs that person user leaves behind"
+    ex: Good auditing tool. Like a new IAM user was created, who made request, when and how
+  CloudTrail Insight: allows to automatically detech unusual api activites in your aws account
+  
+AWS Trusted Advisor:
+    Web service that inspects your AWS environment and provides real time recommendations in accoradance with best practices
+    Pillars: cost optimization, performance, security, fault tolerance, and service limits
