@@ -1,0 +1,40 @@
+Cloud Acquisition
+
+
+Cloud Service Providers:
+  Cloud XaaS, Professional Services, Training, Support, Marketplace
+  
+Resellers, System integrators, managed services:
+  Requirements analysis, strategy and roadmap, solution design and architecture, application development,
+  tech review and audit, implementation and migration
+
+Public sector customers:
+  Governance, security, billing and account management, program management, service desk
+
+1.) Direct from CSPs (cloud services) 
+    Indirect from partners (labor to use cloud services or solutions built on CSP Infrastruture)
+2.) CSPs can help guide through cloud acquisition proceess
+
+Key aspects of procurement
+  Pricing, Security, Governancem Terms and Conditions
+Sustainability
+
+
+Amazon Relational Database Service (RDS)
+
+
+Amazon Virtual Private Cloud (VPC)
+    Private networking cloud 
+    Complete control of configuration..subnets, routing, security , users, traffic
+    Services can run on VPC
+    Multiple vpcs in an account
+    Region based
+    
+    
+AWS Identity and Access Management (IAM)
+    Root credentials has access to everything
+    IAM role - dynamically created, temporary
+    IAM users
+    IAM groups
+    Default users have no access to anything
+    JSON docs will describe authorized roles,documents, paths
