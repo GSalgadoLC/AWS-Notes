@@ -1,0 +1,164 @@
+Auto Scaling Group
+
+    Dynamic scaling policies
+    
+    Works with EC2, ECS, Dynamo DB, Aurora
+    
+Auto Scaling - Enables to configure multiple scaling policies throguhout resources
+Scaling interface
+Scaling plans
+Continual monitoring
+Cost savings plan by avoiding overspending on unneeded resources
+Target tracking scaling policies
+
+Elastic load balancer
+
+Introduction to containers: 
+  Standardized unit of storage
+  
+  Stanadardized unit of sotfware
+    App A B C
+        L L L
+      Containerization platform
+      Operating system
+      Server hardware
+      
+ lightweight, fast, sharing and non sharing of libraries, portable
+ 
+ Docker
+    portable runtime application environment
+    package app and dependencies in a single, immuatble artifact
+    Run different application version with different dependencies simultaneously
+    Faster development and deployment cycles
+    Better resource utilization and efficiency
+    
+    Tools to build,managem and deploy containers
+    Leverages file system layers to be lightweight and fast
+    
+    
+Microservices
+  Decentralized, evolutionary design
+  Smart endpoins, dumb pipes
+  Independent products, not projects
+  Designed fpr failure, build fast, recover fast
+  Dispoabilityy
+  Development and production parity
+
+
+Security concepts
+  Authentication
+  Authorization
+  Monitoring
+  Audit
+  Encryption
+  Data path
+
+Compute
+  Three main types: Instances, containers and serverless
+  CPU: measured in millicores
+  Memory: measured in bytes
+  
+Amazon Elastic Cloud Compute:
+  Virtual machines are the basic building blocks that get computing power from the cloud. Is software that can perform
+  all functions as a physical computer. In EC2 virtual machines are called instances
+  choice of over 500 instance types, with the latest processors, storage, OSs, and networking
+  optimized for specific types of workloads, including memory optimized, compute optimized, storage optimized, 
+    accelerated computing, and general purpose.
+  complete control over the instance, down to the root level
+Container:
+  Run on top of the host OS and share the hosts kernel. Each container running on a host runs 
+  its own isolated root file system in a a separate namespace that may include its own OS
+  Deisgned to help ensure quick, reliable and consistent deployments. Regardless of developer host environment
+  lightweight, efficient, fast, and highly portable
+  There are no time-out limits when running. This is useful for applications that run longer than 15 minutes or that need to initiate instantly when called
+  no size limit. They can be as large or as small as you need them to be.
+  run without the startup latency of Lambda or Amazon EC2
+  
+Amazon Elastic Kubernetes Service
+  Is a managed service that allows you to run kubernetes without having to operate your own worker nodes.
+  Kubernetes is an open source system for automating deployment, scaling, and management of containerized
+  applications. 
+  
+Amazon Elastic Container Service
+  You can deploy containerized workloads on a managed cluster of Amazon EC2 instances
+  No need to intall, operate, and scale your own cluster management infrastructure
+  
+Serverles:
+  Services that you can use to build and run applications without thinking about servers
+  
+AWS Lambda
+  You can run code without provisioning or managing servers. Only pay for compute time you consume. No charge when your code 
+  is not running. You can run code for virtually any type of aplication or backend service without provisioning or managing servers
+  Upload code and set a trigger function to automatically call and run code from other services
+  Unlike running instances, which you pay for even when they are not busy
+  any short-lived application that can finish running in under 15 minutes.
+  Event-driven architecture uses events to initiate actions and communication between decoupled services
+  Each function includes your code and some associated configuration information, including the function name and resource requirements.
+  Lambda functions are stateless, with no affinity to the underlying infrastructure. 
+  Lambda can rapidly launch as many copies of the function as needed to scale to the rate of incoming events.
+
+  
+AWS Fargate 
+  is a technology that you can use with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances. 
+  You no longer have to provision, configure, or scale clusters of virtual machines to run containers.
+  
+  
+Optimal compute solution 
+    for a workload varies based on application design, usage patterns, and configuration settings
+    
+A workload identifies a set of components that together deliver business value
+  
+Consider containers when:   
+compute-intensive workloads
+large monolithic applications having many parts
+  You can break apart applications and run them as independent components, called microservices, using containers to isolate processes.
+When you need to scale quickly 
+When you need to move your large application to the cloud without altering the code
+
+
+When not to consider containers:
+  When applications need persistent data storage
+      Persistent storage requirements increase the security and storage complexity and 
+      also make the containers less portable.If the container is moved, the storage needs
+      to be reconfigured and secured
+  When applications have complex networking, routing, or security requirements
+
+
+Considerations for serverless applications:
+  focus only on your code and not on infrastructure
+  less compute intensive
+  applications that you are running or building small, simple, or modular
+  
+
+
+AWS Step Functions 
+  is a fully managed service that you can use to coordinate the components of distributed applications and microservices using visual workflows
+  
+
+AWS Batch
+  Batch computing is defined as the running of a program without manual intervention
+  The program's input parameters are predefined through scripts, command-line arguments, 
+  control files, or job control language. A given batch job might depend on the completion 
+  of preceding jobs or on the availability of certain inputs. This makes the sequencing and 
+  scheduling of multiple jobs critical.
+  
+  
+AWS Elastic Beanstalk 
+  developers upload their application. Then, Elastic Beanstalk automatically handles the deployment
+  details of capacity provisioning, load balancing, auto-scaling, and application health monitoring
+  
+  
+Amazon Lightsail
+  With a virtual private server (VPS), also known as an instance, users can run websites and web applications
+    in a highly secure and available environment. Lightsail is a VPS provider and is a useful way to get started
+    with AWS for users who need a solution to build and host their applications on AWS Cloud
+  
+  provides developers with compute, storage, and networking capacity and capabilities to deploy and manage websites
+    and web applications in the cloud
+  includes VMs, containers, databases, content delivery network (CDN), load balancers, Domain Name System (DNS) management, and so on
+
+
+
+
+
+
