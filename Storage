@@ -1,0 +1,24 @@
+There are three main types of storage
+
+  Block
+      Where data is written as individual pieces to a storage device.
+      Block storage files, are divided into blocks and written directly to empty blocks
+      on a physical drive. Each block is assigned a unique identifier and then written to
+      the disk in the most efficient manner possible. Since blocks are assigned identifiers, 
+      they do not need to be stored in adjacent sections of the disk. Indeed they can be spread 
+      across multiple disks or environments. You can retrieve the individual blocks separately 
+      from the rest of the file, which makes block storage excellent for technology like 
+      relational databases
+  File
+      Is a hierarchy of directories and subdirectories.
+      operating systems save data in hierarchical file systems organized in the
+      form of directories, sub-directories and files, or folders, sub-folders,
+      and files depending on the operating system.
+      
+  Object
+      A flat structure where data is held in a bucket.
+      Object can be organized to imitate a hierarchy by attaching key name prefixes
+      and delimiters. Prefixes and delimiters allow you to group similar items to help
+      visually organize and easily retrieve your data. In the user interface, these 
+      prefixes give the appearance of a folder and subfolder structure but in reality,
+      the storage is still a flat structure.
